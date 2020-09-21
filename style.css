@@ -11,14 +11,14 @@ p {
     position: fixed;
     font-size: 1.1em;
     top: 48%;
-    position: fixed; /* or absolute */
-    left: 46%;
+    max-width: 90%;
+    
+
 }
 body {
     font-family: "Futura";
-    background: black;
     display: flex;
-    flex-direction: row;
+    overflow: hidden;
   }
   
 
@@ -36,17 +36,29 @@ body {
   color: white;
   }
 
+  .logo {
 
- img {
+    display: grid;
+    place-items: center;
+    min-width: 100%
+  }
+
+img {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
     color: #fff;
-    width: 30%;
-    height: 30%;
+    max-width: 25rem;
+    max-height: 25rem;
+
   }
+
+  @media only screen and (max-width: 800px) {
+    img {
+  width: 300px;
+    }
   
   .cursor {
     width: 54px;
