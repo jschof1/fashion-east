@@ -35,12 +35,19 @@ body {
   text-decoration: none;
   color: white;
   margin-right: 1.7rem;
+  position: fixed;
+  font-size: 1.1em;
+  top: 48%;
+  max-width: 90%;
+  margin-top: 0.5em;
+  z-index: 2;
+
   }
 
   .logo {
     display: grid;
     place-items: center;
-    min-width: 100%
+    min-width: 100%;
   }
 
 img {
@@ -52,7 +59,6 @@ img {
     color: #fff;
     max-width: 25rem;
     max-height: 25rem;
-
   }
 
   @media only screen and (max-width: 800px) {
