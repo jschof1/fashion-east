@@ -65,6 +65,9 @@ img {
     img {
   width: 300px;
     }
+    .cursor {
+      background: none !important;
+    }
   }
   
   .cursor {
